@@ -1,8 +1,9 @@
 console.log("I.AM.GROOT");
 
 let babyGroot = document.querySelector('#iAmGroot')
+
 babyGroot.addEventListener('mouseover', () => {
-    window.alert("I!! AM!! GROOT!!'");
+    alert("I!! AM!! GROOT!!'")
 })
 
 
@@ -10,16 +11,16 @@ babyGroot.addEventListener('mouseover', () => {
 
 // colorButton.addEventListener('click', sayHello);
 
-let formGroot = document.querySelector('form#contactGroot');
 
-// formGroot.addEventListener('button', iAMgroot);
-function iAMgroot(event) {
-    event.preventDefault();
-	
-	window.alert("I......am GROOT!!");
+function iGroot(evt) {
+    evt.preventDefault();
+	alert("I......am GROOT!!");
 }
+let formGroot = document.querySelector('form#contactGroot')
 
-formGroot.addEventListener('submit', iAMgroot);
+formGroot.addEventListener('#groot-button', iGroot)
+
+// formGroot.addEventListener('submit', iAMgroot);
 
 
 
@@ -27,14 +28,24 @@ let colorGroot = document.querySelector('#color')
 
 function colorGroot(evt) {
     evt.preventDefault();
-	
-	window.alert("I Am GROOT!");
+	alert("I Am GROOT!");
 }
 formGroot.addEventListener('#color', colorGroot);
 
 
 let placeGroot = document.querySelector('#place')
 
-
+function placeGroot(evt) {
+    evt.preventDefault();
+	alert("I Am GROOT!");
+}
+formGroot.addEventListener('#place', placeGroot);
 
 let toDoGroot = document.querySelector('#to-do')
+
+function toDoGroot(evt) {
+    evt.preventDefault();
+	
+	alert("I Am GROOT!");
+}
+formGroot.addEventListener('#to-do', toDoGroot);

@@ -14,6 +14,7 @@ let form = document.querySelector('form#contact');
 form.addEventListener('submit', handleSubmit);
 
 let duckyBat = document.querySelector('#duckyBat')
+
 duckyBat.addEventListener('mouseover', () => {
     window.alert("BatDucky says: 'I'd rescue you ANY day!!'");
 })
